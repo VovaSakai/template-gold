@@ -1,0 +1,571 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	height: 100%;
+	font: 14px/18px 'Times New Roman', Times, sans-serif;
+	background-color: #fff;
+}
+
+ol, ul {list-style: none;}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+a, a:hover {text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.left {float: left;}
+.right {float: right;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+
+.container {
+	width: 940px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#header {
+	position: absolute;
+	padding: 20px 0;
+	top: 20px;
+	width: 100%;
+}
+.btn, .services-item img, .portfolio-item img, i {
+	transition: all .2s ease-in-out;
+}
+.logo {
+	float: left;
+}
+.nav {
+	float: right;
+	padding-top: 5px;
+}
+.nav li {
+	float: left;
+	margin-right: 40px;
+}
+.nav li:last-child{margin-right: 0;}
+
+.nav li a {
+	display: block;
+	font: 14px Montserrat;
+	color: white;
+	text-transform: uppercase;
+}
+#touch-menu {
+	display: block;
+	font-size: 50px;
+	color: white;
+	text-shadow: 4px 4px 2px rgba(16, 16, 16, 0.75);
+}
+.nav a:hover, #touch-menu:hover {
+	color: #fed136;
+}
+#touch-menu {
+	display: none;
+	padding: 12px 15px;
+}
+#home {
+	height: 700px;
+	height: 100%;
+	padding-top: 270px;
+	padding-bottom: 100px;
+	text-align: center;
+	color: white;
+	background: #222 url("../img/home-bg.jpg") no-repeat center bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#home h3 {
+	margin-bottom: 40px;
+	font: italic 40px/40px "Droid Serif", Droid Serif;
+}
+#home h1 {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	font: 75px/75px Montserrat;
+}
+.btn {
+	background-color: #fed136;
+	font:bold 24px/24px Montserrat;
+	text-transform: uppercase;
+	padding: 23px 30px 23px 30px;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	border: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	     -o-border-radius: 4px;
+			border-radius: 4px;
+}
+.btn:hover {
+	background: #d3a60c;
+	color: #fff;
+}
+.box {
+	padding: 120px 0;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder {color: transparent}
+:focus:-moz-placeholder {color: transparent}
+:focus:-ms-input-placeholder {color: transparent}
+
+#services {
+	text-align: center;
+	height: 560px;
+	height: 100%;
+}
+h2.title {
+	text-transform: uppercase;
+	font: bold 40px/40px Montserrat;
+	margin-bottom: 10px;
+	color: #222;
+}
+h5.title{
+	font: bold 18px/18px Montserrat;
+	color: #222222;
+	margin-bottom: 10px;
+}
+p, .portfolio-item span {
+	font-family: "Droid Serif";
+}
+.descr {
+	font-size: italic 16px "Droid Serif";
+	color: #777;12
+	margin-bottom: 10px;
+}
+.services-item p{
+	font-size: 18px;
+	color: #777777;
+	line-height: 24px;
+}
+.services-wrap,
+.portfolio-wrap,
+.about-wrap,
+.team-wrap,
+#messega{
+	padding-top: 70px;
+}
+.services-item {
+	float: left;
+	width: 33.33%;
+}
+.services-item img:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+#portfolio {
+	text-align: center;
+	height: 1218px;
+	height: 100%;
+	background: #f7f7f7;
+}
+.portfolio-item {
+	float: left;
+	width: 31%;
+	margin-right: 3.5%;
+	margin-bottom: 50px;
+	background: #fff;
+}
+.portfolio-item img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.portfolio-item:nth-child(3n) {
+	margin-right: 0;
+}
+.p-item-footer {
+	padding: 25px 20px;
+}
+.p-item-footer h5.title {
+	margin-bottom: 4px;
+}
+#about {
+	height: 1666px;
+	height: 100%;
+	text-align: center;
+}
+.about-text {
+	width: 35%;
+}
+.about-img {
+	width: 30%;
+}
+.about-text h5 {
+	line-height: 24px;
+}
+.about-text h5 span {
+	text-transform: uppercase;
+}
+.about-text p {
+	font-size: 16px;
+	color: #777777;
+	line-height: 24px;
+}
+.about-img img, .about-link{
+	display: inline-block;
+	width: 177px;
+	height: 177px;
+	border: 7px solid #f1f1f1;
+
+	-webkit-border-radius: 50%;
+	     -o-border-radius: 50%;
+	   -moz-border-radius: 50%;
+		    border-radius: 50%;
+}
+.about-img:after {
+	content: "";
+	display: block;
+	height: 99px;
+	width: 3px;
+	margin: -5px auto;
+	background: #f1f1f1;
+}
+
+.about-item {
+	display: inline-block;
+}
+.about-link {
+	padding-top: 30px;
+	text-transform: uppercase;
+	background: #fed136;
+	font: bold 18px/30px Arial, sans-serif;
+	color: #fff;
+	text-shadow: 0 1px rgba(0,0,0,.3) ;
+}
+#team {
+	height: 818px;
+	height: 100%;
+	background-color: #f9f9f9;
+	text-align: center;
+}
+.team-item {
+	width: 33.33%;
+	float: left;
+	padding: 0 10px;
+}
+.team-info {
+	margin-top: 45px;
+}
+.team-item img{
+	margin-bottom: 20px;
+	border: 7px solid #fff;
+	-webkit-border-radius: 50%;
+	     -o-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+}
+.cat {
+	font: 14px/14px Arial, sans-serif;
+	color: #777777;
+}
+.social {
+	margin-top: 15px;
+}
+.social i {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 9px;
+	border: 3px solid #222;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	     -o-border-radius: 50%;
+	    	border-radius: 50%;
+}
+
+.fa {
+	color: #222;
+	 font-size: 20px;
+	 padding-top: 6px;
+	 text-align: center;
+}
+.footer-social .fa {
+	color: #fff;
+	background: #222;
+}
+.fa:hover {
+	color: #fff;
+	-webkit-transform: translateY(-5px);
+		-moz-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		-o-transform: translateY(-5px);
+		transform: translateY(-5px);
+		text-align: center;
+}
+.fa-twitter:hover {
+	background: #00aced;
+	border-color: #00aced;
+}
+.fa-facebook:hover {
+	background: #3b5998;
+	border-color: #3b5998;
+}
+.fa-pinterest-p:hover {
+	background: #cb2028;
+	border-color: #cb2028;
+}
+.fa-google-plus:hover {
+	background: #d95232;
+	border-color: #d95232;
+}
+
+.team-wrap {
+	display: inline-block;
+}
+#brand {
+	padding: 60px 0;
+	text-align: center;
+}
+#brand a {
+	display: inline-block;
+	margin-right: 40px;
+}
+#brand a:last-child {
+	margin-right: 0;
+}
+#brand img {
+	vertical-align: middle;
+}
+
+#contact {
+	text-align: center;
+	background: #222222 url("../img/map.png") no-repeat right bottom;
+	height: 677px;
+	height: 100%;
+}
+#contact h2.title {
+	color: white;
+}
+#messega .left,
+#messega .right{
+	width: 48%;
+}
+#messega input[type="text"],
+#messega textarea {
+	width: 100%;
+	background: #fff;
+	font: bold 14px/14px Arial, sans-serif;
+	color: #222;
+	box-shadow: none;
+	margin-bottom: 30px;
+	padding: 15px 20px;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+}
+#messega input[type="text"] {
+	height: 50px;
+	border: 1px solid #ccc;
+}
+#messega textarea {
+	border: none;
+	height: 210px;
+	resize: none;
+}
+::-webkit-input-placeholder {
+	 font: bold 14px/14px Arial, sans-serif;
+	 color: #bbbbbb;
+	 text-transform: uppercase;
+ }
+::-moz-placeholder {
+	font: bold 14px/14px Arial, sans-serif;
+	color: #bbbbbb;
+	text-transform: uppercase;
+}
+#copyright {
+	padding: 25px 0;
+}
+#copyright p {
+	margin-top: 13px;
+	font: 14px/14px Arial, sans-serif;
+	color: #555;
+	width: 50%;
+}
+#copyright .social {
+	margin-top: 0;
+	margin-left: 365px;
+	width: 50%;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		padding: 10px 0;
+		background: #2e2e2e;
+	}
+	.logo img {
+		height: 25px;
+		width: 68px;
+		margin-top: 4px;
+		margin-left: 10px;
+	}
+	.nav {
+		position: absolute;
+		top: 90%;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+	.nav li {float: none;margin-right: 0;}
+	.nav li a {
+		color: #fff;
+		border-top: 1px solid #b1b0b0;
+		border-left: 3px solid transparent;
+		background: #3d3d3d;
+		padding-left: 5px;
+	}
+	.nav li:first-child a {border-top: none;}
+
+	.nav li a:hover {
+		color: #fed136;
+		border-left: 3px solid #f6c621;
+		background: #505050;
+	}
+	#touch-menu {
+		display: block;
+		float: right;
+		height: 50px;
+		margin: -5px 0;
+	}
+	#home {padding-top: 200px;}
+	#home h3 {
+		font: italic 35px/35px "Droid Serif", Droid Serif;
+	}
+	#home h1 {
+		font: 50px/50px Montserrat;
+	}
+	.services-item {
+		width: 50%;
+		text-align: left;
+		margin-bottom: 30px;
+}
+	.services-item img {
+		float: left;
+		margin-right: 20px;
+		margin-left: 10px;
+}
+	.services-item h5, p {
+	overflow: hidden;
+}
+	.portfolio-item {
+		width: 46%;
+	}
+	.portfolio-item:nth-child(2n) {
+		margin-right: 0;
+	}
+	.portfolio-item:nth-child(3n) {
+		margin-right: 3.5%;
+	}
+	.about-text {
+		width: 52%;
+	}
+	.about-img {
+		width: 47%;
+	}
+	.about-img:after {
+		background: none;
+}
+	.team-item {
+		width: 50%;
+}
+	.team-item:last-child {
+		width: 100%;
+}
+#messega .left,
+#messega .right{
+	width: 95%;
+}
+#messega .left {margin-left: 2.5%;}
+#messega .right {margin-right: 2.5%;}
+#copyright p {
+	width: 100%;
+	line-height: 20px;
+	margin-left: 20px;
+}
+#copyright .social {
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 100%;
+	float: left;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#home {padding-top: 170px;}
+	#home h3 {
+		font: italic 25px/25px "Droid Serif", Droid Serif;
+	}
+	#home h1 {
+		font: 40px/40px Montserrat;
+	}
+	.services-item {
+		width: 100%;
+	}
+	.portfolio-item {
+		width: 100%;
+		background: none;
+	}
+	.about-text {
+		width: 90%;
+		text-align: left;
+		float: right;
+	}
+	.about-img {
+		width: 100%;
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.team-item {
+		width: 100%;
+}
+}
